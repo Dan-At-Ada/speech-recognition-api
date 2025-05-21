@@ -101,6 +101,7 @@
             // Start recognising
             recognizer.addEventListener('result', function(event) {
                transcription.textContent = '';
+               console.log(event.results)
 
                for (var i = event.resultIndex; i < event.results.length; i++) {
                   if (event.results[i].isFinal) {
